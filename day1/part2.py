@@ -1,6 +1,7 @@
 import sys
+import os
 
-with open('part2.txt') as f:
+with open(os.path.join(os.path.dirname(__file__), 'input.txt')) as f:
     puzzle_input = f.read()
 
 seen = set()

@@ -1,6 +1,7 @@
+import os
 from collections import Counter
 
-with open('part3.txt') as f:
+with open(os.path.join(os.path.dirname(__file__), 'input.txt')) as f:
     puzzle_input = f.read()
 
 twos = 0
